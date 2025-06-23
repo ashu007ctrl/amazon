@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon - Online Shopping</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Amazon - Explore deals on mobiles, laptops, fashion, electronics & more. Search and redirect to Amazon for best offers.">
+  <meta name="keywords" content="amazon, online shopping, mobile deals, laptop deals, fashion, appliances, electronics, ecommerce">
+  <meta name="author" content="Amazon Team">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Amazon - Online Shopping" />
+  <meta property="og:description" content="Search products and explore the best deals just like Amazon." />
+  <meta property="og:image" content="https://amazon-offers.netlify.app/preview.jpg" loading="lazy" />
+  <meta property="og:url" content="https://amazon-offers.netlify.app/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Amazon - Online Shopping" />
+  <meta name="twitter:description" content="Experience Amazon-style shopping homepage with live search and categories." />
+  <meta name="twitter:image" content="https://amazon-offers.netlify.app/preview.jpg" loading="lazy" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://amazon-offers.netlify.app/" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images-eu.ssl-images-amazon.com">
+<link rel="dns-prefetch" href="https://images-eu.ssl-images-amazon.com">
+
+
+  <!-- Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Amazon",
+    "url": "https://amazon-offers.netlify.app",
+    "logo": "https://amazon-offers.netlify.app/favicon.ico",
+    "sameAs": [
+      "https://www.amazon.in",
+      "https://www.facebook.com/AmazonIN",
+      "https://twitter.com/AmazonIN"
+    ]
+  }
+  </script>
+
+  <!-- Website Search Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Amazon",
+    "url": "https://amazon-offers.netlify.app",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.amazon.in/s?k={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="logo">Amazon</div>
+  <div class="explore">Explore <span>Prime</span></div>
+
+  <div class="header-center">
+    <div class="search-box">
+      <form action="https://www.amazon.in/s" method="GET">
+        <input type="text" name="k" placeholder="Search for products, brands and more" />
+      </form>
+    </div>
+
+    <div class="header-icons">
+      <a href="#">Login</a>
+      <a href="#">Cart</a>
+    </div>
+  </div>
+</header>
+
+<div class="menu">
+  <!-- No link changes needed here -->
+  <!-- Just UI icons and divs for internal sections -->
+  <a class="menu-item" href="#slider-section">
+    <img src="images/kilos.jpg" alt="Kilos" loading="lazy"/>
+    <div>Slider</div>
+  </a>
+  <a class="menu-item" href="#mobiles">
+    <img src="https://img.icons8.com/color/48/000000/smartphone.png" alt="Smartphone" loading="lazy" />
+    <div>Mobiles</div>
+  </a>
+  <a class="menu-item" href="#fashion">
+    <img src="images/fashion.jpg" alt="Fashion" loading="lazy" />
+    <div>Fashion ▼</div>
+  </a>
+  <a class="menu-item" href="#laptops">
+    <img src="https://img.icons8.com/color/48/000000/laptop.png" alt="Electronics" loading="lazy" />
+    <div>Electronics ▼</div>
+  </a>
+  <a class="menu-item" href="#appliances">
+    <img src="https://img.icons8.com/color/48/000000/sofa.png" alt="Home" loading="lazy" />
+    <div>Home & Furniture ▼</div>
+  </a>
+  <a class="menu-item" href="#appliances">
+    <img src="https://img.icons8.com/color/48/000000/washing-machine.png" alt="Appliances" loading="lazy" />
+    <div>Appliances</div>
+  </a>
+  <a class="menu-item" href="#slider-section">
+    <img src="https://img.icons8.com/color/48/000000/airplane-take-off.png" alt="Flights" loading="lazy" />
+    <div>Flight Bookings</div>
+  </a>
+  <a class="menu-item" href="#accessories">
+    <img src="https://img.icons8.com/color/48/000000/teddy-bear.png" alt="Toys" loading="lazy" />
+    <div>Beauty, Toys & More ▼</div>
+  </a>
+  <a class="menu-item" href="#bikes">
+    <img src="images/bikes.jpg" alt="Bikes" loading="lazy"/>
+    <div class="blue">Two Wheelers ▲</div>
+  </a>
+</div>
+<h1>Amazon Offers & Deals on Electronics, Fashion & More</h1>
+
+<div class="slider" id="slider-section">
+  <div class="slides">
+    <img src="images/slide2.png" alt="Slider 2"loading="lazy" />
+    <img src="images/slide3.png" alt="Slider 3" loading="lazy" />
+    <img src="images/slide4.png" alt="Slider 4" loading="lazy" />
+    <img src="images/slide5.png" alt="Slider 5" loading="lazy"/>
+  </div>
+</div>
+
+<div class="product-grid">
+  <a href="https://www.amazon.in/s?k=mobiles" target="_blank" class="product-card" id="mobiles">
+    <img src="images/mobile.png" alt="Product" loading="lazy" />
+    <h4>Best Mobile Deals</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=laptops" target="_blank" class="product-card" id="laptops">
+    <img src="images/laptop.jpg" alt="Product" loading="lazy" />
+    <h4>Laptop Offers</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=mobile+accessories" target="_blank" class="product-card" id="accessories">
+    <img src="images/accesories.jpg" alt="Product" loading="lazy" />
+    <h4>Top Accessories</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=home+appliances" target="_blank" class="product-card" id="appliances">
+    <img src="images/appliances.jpg" alt="Product" loading="lazy" />
+    <h4>Home Appliances</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=two+wheelers" target="_blank" class="product-card" id="bikes">
+    <img src="images/bikes.jpg" alt="Product" loading="lazy" />
+    <h4>Two Wheelers</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=fashion" target="_blank" class="product-card" id="fashion">
+    <img src="images/fashion.jpg" alt="Product" loading="lazy" />
+    <h4>Latest Fashion</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=grocery" target="_blank" class="product-card" id="grocery">
+    <img src="images/grocery.jpg" alt="Grocery" loading="lazy" />
+    <h4>Daily Grocery Deals</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=toys" target="_blank" class="product-card" id="toys">
+    <img src="images/toys.jpg" alt="Toys" loading="lazy" />
+    <h4>Kids' Toys & Games</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=furniture" target="_blank" class="product-card" id="furniture">
+    <img src="images/furniture.jpg" alt="Furniture" loading="lazy" />
+    <h4>Furniture Collection</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=healthcare" target="_blank" class="product-card" id="healthcare">
+    <img src="images/healthcare.jpg" alt="Healthcare" loading="lazy" />
+    <h4>Healthcare Essentials</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=beauty" target="_blank" class="product-card" id="beauty">
+    <img src="images/beauty.jpg" alt="Beauty" loading="lazy" />
+    <h4>Beauty & Grooming</h4>
+  </a>
+  <a href="https://www.amazon.in/s?k=sports+fitness" target="_blank" class="product-card" id="sports">
+    <img src="images/sports.jpg" alt="Sports" loading="lazy" />
+    <h4>Sports & Fitness</h4>
+  </a>
+</div>
+
+<footer class="footer">
+  <div class="footer-section">
+    <h4>ABOUT</h4>
+    <a href="https://www.amazon.in/gp/help/customer/display.html" target="_blank">Contact Us</a>
+    <a href="https://www.aboutamazon.in/" target="_blank">About Us</a>
+    <a href="https://www.amazon.jobs/en/locations/india" target="_blank">Careers</a>
+  </div>
+
+  <div class="footer-section">
+    <h4>GROUP COMPANIES</h4>
+    <a href="https://www.primevideo.com/" target="_blank">Prime Video</a>
+    <a href="https://music.amazon.in/" target="_blank">Amazon Music</a>
+    <a href="https://aws.amazon.com/" target="_blank">AWS</a>
+  </div>
+
+  <div class="footer-section">
+    <h4>HELP</h4>
+    <a href="https://www.amazon.in/gp/help/customer/display.html" target="_blank">Payments</a>
+    <a href="https://www.amazon.in/gp/help/customer/display.html" target="_blank">Shipping</a>
+    <a href="https://www.amazon.in/gp/help/customer/display.html" target="_blank">Returns</a>
+    <a href="https://www.amazon.in/gp/help/customer/display.html" target="_blank">FAQ</a>
+  </div>
+
+  <div class="footer-section">
+    <h4>CONSUMER POLICY</h4>
+    <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=508088" target="_blank">Terms Of Use</a>
+    <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201909010" target="_blank">Security</a>
+    <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=468496" target="_blank">Privacy</a>
+  </div>
+
+  <div class="copyright">©2025 All rights reserved !</div>
+</footer>
+
+<script>
+  function searchAmazon(e) {
+    e.preventDefault();
+    const query = document.getElementById('searchInput').value.trim();
+    if (query !== '') {
+      const url = `https://www.amazon.in/s?k=${encodeURIComponent(query)}`;
+      window.location.href = url;
+    }
+  }
+</script>
+
+</body>
+</html>
