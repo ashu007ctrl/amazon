@@ -15,7 +15,7 @@ html {
 }
 
 .logo img {
-  height: 76px;
+  height: 46px;
   object-fit: contain;
   display: block;
 }
@@ -47,7 +47,7 @@ html {
 /* Responsive adjustment */
 @media (max-width: 480px) {
   .logo img {
-    height: 60px;
+    height: 40px;
   }
 }
 
