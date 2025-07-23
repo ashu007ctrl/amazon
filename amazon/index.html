@@ -145,12 +145,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 16px;
+    padding: 12px 20px;
     background-color: white;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
   }
-
+.site-name {
+  font-size : 24px;
+   font-weight : bold;
+  color : #333; 
+}
   .logo-img {
     height: 40px;
   }
@@ -171,7 +175,7 @@
 
   .header-icons {
     display: flex;
-    align-items: center;
+    
     gap: 20px;
     font-size: 16px;
   }
@@ -199,8 +203,8 @@
   @media (max-width: 768px) {
     .custom-header {
       flex-direction: column;
-      align-items: stretch;
-      gap: 10px;
+      align-items: flex-start;
+      gap: 8px;
     }
 
     .search-box {
@@ -233,10 +237,8 @@
 <body>
 
  <header class="custom-header">
-  <!-- Logo -->
-  <a href="/" class="logo">
-    <img src="images/logo.png" alt="Shoping Mall Logo" class="logo-img">
-  </a>
+  
+  <div class="site-name">Shoping Mall </div>
   <!-- Right Icons -->
   <div class="header-icons">
     <a href="#">Login</a>
