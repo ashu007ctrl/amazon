@@ -7,20 +7,6 @@
     <lastmod>2025-07-23</lastmod>
     <priority>1.00</priority>
   </url>
-  <url>
-    <loc>https://www.amazon.in/mobiles</loc>
-    <lastmod>2025-06-22</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.amazon.in/laptops/pr?sid=6bo,b5g</loc>
-    <lastmod>2025-06-22</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.amazon.in/clothing-and-accessories/pr?sid=clo</loc>
-    <lastmod>2025-06-22</lastmod>
-    <priority>0.80</priority>
-  </url>
+  
   <!-- Add more product links similarly -->
 </urlset>
