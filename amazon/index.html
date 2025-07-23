@@ -135,6 +135,84 @@
         width: 100%;
       }
     }
+     {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .custom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .search-box {
+    flex: 1;
+    margin: 0 16px;
+    min-width: 200px;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    font-size: 16px;
+  }
+
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .header-icons a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+
+  /* Suggestion List (if used) */
+  .suggestion-list {
+    list-style: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 10;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .custom-header {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+
+    .search-box {
+      width: 100%;
+      margin: 0;
+    }
+
+    .header-icons {
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+  }
   </style>
   <script type="application/ld+json">
 {
@@ -160,25 +238,31 @@
     </a>
 
 
-    <div class="header-center">
-      <div class="search-box">
-        <form onsubmit="handleSearch(event)">
-          <input type="text" id="searchInput" placeholder="Search for products..."
-            aria-label="Search products on Amazon and Flipkart" oninput="showSuggestions(this.value)">
+ <header class="custom-header">
+  <!-- Logo -->
+  <a href="/" class="logo">
+    <img src="images/8.jpg" alt="Shoping Mall Logo" class="logo-img">
+  </a>
 
-          <ul id="suggestionBox" class="suggestion-list"></ul>
-        </form>
-      </div>
-
-    </div>
-
+  <!-- Search Bar -->
+  <div class="search-box">
+    <form onsubmit="handleSearch(event)">
+      <input type="text" id="searchInput" placeholder="Search for products..."
+        aria-label="Search products on Amazon and Flipkart" oninput="showSuggestions(this.value)">
+      <ul id="suggestionBox" class="suggestion-list"></ul>
     </form>
-    <div class="header-icons">
-      <a href="#">Login</a>
-      <a href="#">Cart</a>
-    </div>
-    </div>
-  </header>
+  </div>
+
+  <!-- Right Icons -->
+  <div class="header-icons">
+    <a href="#">Login</a>
+    <a href="#">🛒</a>
+  </div>
+</header>
+
+
+
+    
 
   <div class="menu">
     <a class="menu-item" onclick="triggerPopup('mobiles')">
